@@ -1,0 +1,26 @@
+name: Short Term Reversal - Weekly Rebalance
+
+on:
+  schedule:
+    - cron: '35 14 * * 1'   # Mondays ~9:35am ET (14:35 UTC) — adjust ±1hr for daylight saving
+  workflow_dispatch: {}
+
+jobs:
+  rebalance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+        run: python strategies/short_term_reversal.py
+      - run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add logs/short_term_reversal_log.csv logs/short_term_reversal_results.csv
+          git commit -m "Short term reversal: rebalance $(date -u +'%Y-%m-%d')" || echo "No changes"
+          git push
