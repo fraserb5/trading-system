@@ -21,6 +21,7 @@ jobs:
       - run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add logs/btc_seasonality_log.csv
+          git add logs/btc_seasonality_log.csv logs/btc_seasonality_results.csv
+          git add logs/btc_seasonality_open_state.json || true
           git commit -m "BTC seasonality: close $(date -u +'%Y-%m-%d %H:%M UTC')" || echo "No changes"
           git push
