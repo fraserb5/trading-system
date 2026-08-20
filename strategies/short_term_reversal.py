@@ -108,8 +108,21 @@ for symbol in longs:
 
 for symbol in shorts:
     if symbol not in already_held:
+        try:
+            last_price = bars.loc[symbol]["close"].iloc[-1]
+        except KeyError:
+            continue  # no price data for this symbol, skip it
+
+        qty_to_short = int(per_short_notional // last_price)  # whole shares only
+        if qty_to_short < 1:
+            log_line = f"{datetime.utcnow().isoformat()},{symbol},action=SKIPPED,note=notional_too_small_for_1_share"
+            print(log_line)
+            with open(log_dir / "short_term_reversal_log.csv", "a") as f:
+                f.write(log_line + "\n")
+            continue
+
         order = MarketOrderRequest(
-            symbol=symbol, notional=round(per_short_notional, 2),
+            symbol=symbol, qty=qty_to_short,
             side=OrderSide.SELL, time_in_force=TimeInForce.DAY
         )
         trading_client.submit_order(order)
