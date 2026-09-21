@@ -11,3 +11,8 @@
 2026-09-14T19:32:13.453823,META,action=SKIPPED,note=notional_too_small_for_1_share
 2026-09-14T19:32:13.454195,DE,action=SKIPPED,note=notional_too_small_for_1_share
 2026-09-14T19:32:13.581486,longs=AMGN|LRCX|ORCL|BKNG|MU|KLAC|NVDA|SYK|AMAT|CMCSA,shorts=CRM|NOW|META|DE|AAPL|COP|QCOM|ACN|MO|T
+2026-09-21T19:39:29.832186,META,action=SKIPPED,note=notional_too_small_for_1_share
+2026-09-21T19:39:29.832576,AMD,action=SKIPPED,note=notional_too_small_for_1_share
+2026-09-21T19:39:29.832868,DE,action=SKIPPED,note=notional_too_small_for_1_share
+2026-09-21T19:39:29.853815,MU,action=SKIPPED,note=notional_too_small_for_1_share
+2026-09-21T19:39:29.864062,longs=INTU|CRM|NFLX|IBM|CMCSA|VZ|COP|ADBE|UNP|CI,shorts=META|AMD|QCOM|DE|AAPL|TSLA|ISRG|MU|PANW|NOW
