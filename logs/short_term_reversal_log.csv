@@ -22,3 +22,8 @@
 2026-09-28T20:40:10.278980,DE,action=SKIPPED,note=notional_too_small_for_1_share
 2026-09-28T20:40:10.279225,TMO,action=SKIPPED,note=notional_too_small_for_1_share
 2026-09-28T20:40:10.332531,longs=INTU|ORCL|BA|SCHW|ADBE|WFC|ACN|MCD|REGN|NFLX,shorts=AMD|META|QCOM|ISRG|MU|DE|TMO|AAPL|WMT|ADI
+2026-10-05T21:34:13.320852,AMD,action=SKIPPED,note=notional_too_small_for_1_share
+2026-10-05T21:34:13.321067,AMAT,action=SKIPPED,note=notional_too_small_for_1_share
+2026-10-05T21:34:13.364165,META,action=SKIPPED,note=notional_too_small_for_1_share
+2026-10-05T21:34:13.475327,MU,action=SKIPPED,note=notional_too_small_for_1_share
+2026-10-05T21:34:13.475383,longs=BMY|JNJ|MRK|GILD|VRTX|PFE|LOW|BSX|GE|AMGN,shorts=AMD|AMAT|PANW|META|KLAC|LRCX|ADI|TXN|MU|ISRG
