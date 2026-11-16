@@ -43,3 +43,8 @@
 2026-11-09T23:30:00.571529,REGN,action=SKIPPED,note=notional_too_small_for_1_share
 2026-11-09T23:30:00.596250,LLY,action=SKIPPED,note=notional_too_small_for_1_share
 2026-11-09T23:30:00.705682,longs=MU|NVDA|LMT|COP|XOM|CVX|PM|TSLA|PANW|ADBE,shorts=LOW|REGN|ACN|HD|SBUX|LLY|MCD|CMCSA|SYK|MDT
+2026-11-16T23:27:55.400818,REGN,action=SKIPPED,note=notional_too_small_for_1_share
+2026-11-16T23:27:55.401180,LLY,action=SKIPPED,note=notional_too_small_for_1_share
+2026-11-16T23:27:55.401478,COST,action=SKIPPED,note=notional_too_small_for_1_share
+2026-11-16T23:27:55.401762,BRK.B,action=SKIPPED,note=notional_too_small_for_1_share
+2026-11-16T23:27:55.415414,longs=NVDA|APH|ETN|AMAT|DE|TJX|NFLX|MSFT|ISRG|KLAC,shorts=REGN|CMCSA|LOW|LLY|MCD|COST|HD|SBUX|BRK.B|PEP
